@@ -18,8 +18,8 @@ publisher, string, manning
 timeout 10 sec
 
 
-In Tab Code put this code
-======================================
+In Tab Code put this code below :
+
 var AWS = require("aws-sdk");
 var dynamodb = new AWS.DynamoDB();
 var docClient = new AWS.DynamoDB.DocumentClient();
@@ -40,12 +40,12 @@ var docClient = new AWS.DynamoDB.DocumentClient();
             }
         });
     };
-======================================
+
 
 
 
 In Tab Actions => Configure test event => paste code this below :
-======================================
+
 {
  "params":{
      "querystring":{
@@ -53,4 +53,4 @@ In Tab Actions => Configure test event => paste code this below :
      }
   }
 }
-======================================
+
