@@ -20,6 +20,7 @@ timeout 10 sec
 
 In Tab Code put this code below :
 
+
 var AWS = require("aws-sdk");
 var dynamodb = new AWS.DynamoDB();
 var docClient = new AWS.DynamoDB.DocumentClient();
@@ -31,7 +32,6 @@ var docClient = new AWS.DynamoDB.DocumentClient();
                 "bookid": parseInt(event.params.querystring.bookid)
             }
         };
-
         docClient.get(params, function(err, data) {
             if (err) {
                 console.error("Unable to read item. Error JSON:", JSON.stringify(err, null, 2));
