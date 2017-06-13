@@ -40,12 +40,12 @@ var docClient = new AWS.DynamoDB.DocumentClient();
             }
         });
     };
-
 ======================================
+
+
 
 In Tab Actions => Configure test event => paste code this below :
 ======================================
-
 {
  "params":{
      "querystring":{
